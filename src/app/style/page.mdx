@@ -1,0 +1,70 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "~/components/ui/card";
+
+import { Button } from "~/components/ui/button";
+
+import Link from "next/link";
+import { Paragraph } from "~/components/paragraph";
+
+# Style Gallery
+
+Welcome to the style gallery, where you can look through designs from various
+barbershops from across the US. Choose a design from one of the shops and try
+to simulate it in the Barbershop Computing Software.
+
+<div className="row">
+  <div className="mt-3 w-6/12 lg:w-4/12">
+
+    <Card >
+      <CardHeader/>
+      <CardContent>
+        <Link href="/barber-love" >     <img
+          src="/img/featured-1.png"
+          className="img-fluid tut-img"
+          alt="Barbershop Computing Software"
+        /> </Link>
+      </CardContent>
+      <CardFooter className="flex justify-center">
+      <Link href="/barber-love" >
+      <Button  className="text-blue-500" variant="link">
+      Barber Love
+      </Button>
+
+    </Link>
+      </CardFooter>
+    </Card>
+
+
+    <div className="ts-card">
+      <a href="/barberlove.html">
+
+      </a>
+      <div className="ts-section">
+        <div className="ts-header text-center">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div className="mt-3 w-6/12 lg:w-4/12">
+    <img
+      src="/img/featured-soon.png"
+      className="img-fluid tut-img"
+      alt="Barbershop Computing Software"
+    />
+  </div>
+  <div className="mt-3 w-6/12 lg:w-4/12">
+    <img
+      src="/img/featured-soon.png"
+      className="img-fluid tut-img"
+      alt="Barbershop Computing Software"
+    />
+  </div>
+</div>

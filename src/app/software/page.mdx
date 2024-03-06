@@ -1,0 +1,34 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "~/components/ui/card";
+
+import Link from "next/link";
+import { Button } from "~/components/ui/button";
+
+# Barbershop Computing Software
+
+###### Create your own patterns with Barbershop Computing
+
+   <Card className="md:w-4/12 w-full mt-4">
+      <CardHeader/>
+      <CardContent>
+        <Link href="https://csdt.org/applications/127/run" >     <img
+          src="/img/software.png"
+          className="img-fluid tut-img"
+          alt="Barbershop Computing Software"
+        /> </Link>
+      </CardContent>
+      <CardFooter className="flex justify-center">
+      <Link href="https://csdt.org/applications/127/run"  >
+      <Button  className="text-blue-500" variant="link">
+     Barbershop
+      </Button>
+
+    </Link>
+      </CardFooter>
+    </Card>
